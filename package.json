@@ -14,4 +14,3 @@
     "postinstall": "cd ./client && yarn"
   }
 }
-Progressive Global
