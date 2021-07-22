@@ -1,6 +1,6 @@
 {
-  "name": "group-video-final",
-  "version": "1.0.0",
+  "name": "witty-chat",
+  "version": "0.2.7",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
@@ -14,7 +14,6 @@
     "synp": "^1.9.7"
   },
   "scripts": {
-    "start": "PROD=true node server.js",
-    "postinstall": "cd ./client && yarn"
+    "start": "PROD=true node server.js"
   }
 }
