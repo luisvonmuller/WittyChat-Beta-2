@@ -5,9 +5,13 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "add": "^2.0.6",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "socket.io": "^2.3.0"
+    "noyarn": "^0.3.0",
+    "nyarn": "^1.2.0",
+    "socket.io": "^2.3.0",
+    "synp": "^1.9.7"
   },
   "scripts": {
     "start": "PROD=true node server.js",
