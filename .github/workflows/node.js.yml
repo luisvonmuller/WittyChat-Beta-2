@@ -20,8 +20,6 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: NPM or Yarn install with caching
-      uses: bahmutov/npm-install@v1.6.0
     - uses: actions/checkout@v2
       with:
           persist-credentials: false
