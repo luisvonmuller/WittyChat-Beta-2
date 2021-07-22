@@ -15,6 +15,6 @@
   },
   "scripts": {
     "start": "PROD=true node server.js"
-    "test": "cd ./webclient && yarn"
+"postinstall": "cd ./client && yarn"
   }
 }
