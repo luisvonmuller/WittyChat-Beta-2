@@ -1,17 +1,19 @@
-su - ec2-user -c cd /usr/local/nginx/html/node && npm install synp
-npm install express
-npm install socket.io
-npm install dotenv
-npm install -g nodemon
-npm install add
-npm install @testing-library/jest-dom
-npm install @testing-library/react
-npm install @testing-library/user-event
-npm install react
-npm install react-dom
-npm install react-router-dom
-npm install react-scripts
-npm install simple-peer
-npm install socket.io-client
-npm install uuid
-npm install styled-components
+sudo yum install -y gcc-c++ make
+curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
+sudo yum install -y nodejs
+sudo npm install express
+sudo npm install socket.io
+sudo npm install dotenv
+sudo npm install -g nodemon
+sudo npm install add
+sudo npm install @testing-library/jest-dom
+sudo npm install @testing-library/react
+sudo npm install @testing-library/user-event
+sudo npm install react
+sudo npm install react-dom
+sudo npm install react-router-dom
+sudo npm install react-scripts
+sudo npm install simple-peer
+sudo npm install socket.io-client
+sudo npm install uuid
+sudo npm install styled-components
