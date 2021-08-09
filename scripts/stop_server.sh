@@ -1,0 +1,1 @@
+kill "${nodemon_pid}"
