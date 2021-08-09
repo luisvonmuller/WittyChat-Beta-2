@@ -1,4 +1,3 @@
-sudo yum install nodejs14
 npm install express
 npm install socket.io
 npm install dotenv
