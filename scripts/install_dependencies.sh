@@ -4,7 +4,7 @@ sudo yum install -y nodejs
 sudo npm install express
 sudo npm install socket.io
 sudo npm install dotenv
-sudo npm install -g nodemon
+sudo npm install pm2@latest -g
 sudo npm install add
 sudo npm install @testing-library/jest-dom
 sudo npm install @testing-library/react
