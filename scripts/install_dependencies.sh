@@ -1,4 +1,4 @@
-su - ec2-user -c 'cd /usr/local/nginx/html/node && npm install synp
+su - ec2-user -c cd /usr/local/nginx/html/node && npm install synp
 npm install express
 npm install socket.io
 npm install dotenv
