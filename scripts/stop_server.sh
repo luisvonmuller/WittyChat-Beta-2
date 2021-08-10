@@ -1,1 +1,1 @@
-sudo killall nodemon
+sudo pkill -f node -9
