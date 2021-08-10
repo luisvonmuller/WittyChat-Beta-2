@@ -1,1 +1,1 @@
-kill "${nodemon_pid}"
+sudo kill -9 `pidof nodemon`
