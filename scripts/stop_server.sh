@@ -1,1 +1,1 @@
-sudo pkill -f node -9
+pm2 stop app_name
