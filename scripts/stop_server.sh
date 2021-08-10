@@ -1,1 +1,2 @@
-pm2 stop app_name
+node
+pm2 stop all
