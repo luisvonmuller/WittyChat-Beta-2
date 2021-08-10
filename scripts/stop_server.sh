@@ -1,2 +1,1 @@
-node
-pm2 stop all
+service httpd restart
