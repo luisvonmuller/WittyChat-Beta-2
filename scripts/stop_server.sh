@@ -1,1 +1,1 @@
-sudo kill -9 `pidof nodemon`
+sudo killall nodemon
