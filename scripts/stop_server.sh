@@ -1,1 +1,1 @@
-service httpd stop
+sudo systemctl https stop
