@@ -1,3 +1,3 @@
 sudo yum -y install httpd
 sudo service httpd start
-pm2 start ./server.js
+nodemon ./server.js localhost 80
