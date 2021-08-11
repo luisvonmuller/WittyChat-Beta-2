@@ -1,1 +1,1 @@
-sudo systemctl httpd stop
+sudo systemctl stop httpd
