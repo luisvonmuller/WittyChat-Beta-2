@@ -1,6 +1,10 @@
 {
   "name": "witty-chat",
   "version": "0.2.7",
+  "description": "WittyChat, the next generation videochat",
+  "repository": "https://github.com/ArhumTheDeveloper/WittyChat-Beta-2",
+  "homepage": "wittychatclient.com",
+  "author": "Arhum Raja",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
