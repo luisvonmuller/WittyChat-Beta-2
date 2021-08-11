@@ -1,6 +1,10 @@
 {
   "name": "client",
+  "description": "A client for WittyChat",
   "version": "0.1.0",
+  "repository": "https://github.com/ArhumTheDeveloper/WittyChat-Beta-2",
+  "homepage": "http://wittychatclient.com",
+  "author": "Arhum Raja",
   "private": true,
   "proxy": "http://localhost:80",
   "dependencies": {
