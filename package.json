@@ -7,7 +7,6 @@
   "author": "Arhum Raja",
   "main": "index.js",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
     "add": "^2.0.6",
     "dotenv": "^8.2.0",
