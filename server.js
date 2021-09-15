@@ -56,6 +56,6 @@ io.on('connection', socket =>
 
 });
 
-server.listen(process.env.PORT || 80, () => console.log('server is running on port 3000'));
+server.listen(process.env.PORT || 8080, () => console.log('server is running on port 3000'));
 
 module.exports = app;

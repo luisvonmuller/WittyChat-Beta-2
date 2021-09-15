@@ -5,11 +5,11 @@ const CreateRoom = (props) => {
 	function create() {
 		const id = uuid();
 		props.history.push(`/room/${id}`);
-}
+	}
 
 	return (
 	<button onClick={create}>Create room</button>
 );
 };
 
-export default CreateRoom()
+export default CreateRoom
