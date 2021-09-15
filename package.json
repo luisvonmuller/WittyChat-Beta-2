@@ -11,10 +11,11 @@
     "add": "^2.0.6",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "nodemon": "^2.0.12",
     "socket.io": "^2.3.0",
     "synp": "^1.9.7"
   },
   "scripts": {
-    "start": "nodemon ./server.js localhost 80"
+    "start": "nodemon ./server.js"
   }
 }
