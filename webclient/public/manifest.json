@@ -20,6 +20,6 @@
   ],
   "start_url": "https://witty-chat.herokuapp.com/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "background_color": "#008080"
 }
