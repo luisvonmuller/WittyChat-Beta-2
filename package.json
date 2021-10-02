@@ -16,7 +16,6 @@
     "synp": "^1.9.7"
   },
   "scripts": {
-    "start": "PROD=true node server.js",
-    "postinstall": "cd ./webclient && npm"
+    "start": "PROD=true node server.js"
   }
 }
