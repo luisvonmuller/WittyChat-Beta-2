@@ -16,6 +16,6 @@
     "synp": "^1.9.7"
   },
   "scripts": {
-    "start": "nodemon ./server.js"
+    "start": "PROD=true node server.js"
   }
 }
