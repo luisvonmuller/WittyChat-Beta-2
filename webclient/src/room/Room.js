@@ -43,7 +43,7 @@ const videoConstraints = {
 
 
 
-const Room = (props) => {
+export default function Room(props) {=
   const [peers, setPeers] = useState([]);
   const socketRef = useRef();
   const userVideo = useRef();
@@ -152,4 +152,4 @@ const Room = (props) => {
   );
 };
 
-export default Room;
+
