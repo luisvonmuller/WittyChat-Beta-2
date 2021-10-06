@@ -18,6 +18,5 @@
     },
   "scripts": {
     "start": "PROD=true nodemon ./server.js"
-    "fix": "npm install"
   }
 }
