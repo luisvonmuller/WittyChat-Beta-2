@@ -1,1 +1,1 @@
-web: npm update && npm start
+web: npm install stream-browserify && npm start
