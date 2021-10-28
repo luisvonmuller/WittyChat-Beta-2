@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useReducer } from "react";
+import * as React from "react";
+import import React, { useEffect, useRef, useReducer } from "react";
 import io from "socket.io-client";
 import Peer from "simple-peer";
 import styled from "styled-components";
