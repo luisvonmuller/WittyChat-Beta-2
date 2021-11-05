@@ -1,5 +1,5 @@
-import * as React from "react";
-import import React, { useEffect, useRef, useReducer } from "react";
+import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 import Peer from "simple-peer";
 import styled from "styled-components";
@@ -45,8 +45,7 @@ const videoConstraints = {
 
 
 export default function Room(props) {()=>
-  const [peers, setPeers] = useReducer([peers, setPeers]);
-  const socketRef = useRef();
+  { const socketRef = useRef();
   const userVideo = useRef();
   const peersRef = useRef([]);
   const roomID = props.match.params.roomID;
@@ -153,4 +152,4 @@ export default function Room(props) {()=>
   );
 };
 
-
+}
