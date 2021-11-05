@@ -61,9 +61,10 @@ server.listen(process.env.PORT || 8080, () => console.log('server is running on 
 module.exports = app;
 
 if (process.env.NODE_ENV === 'production') {
-  // Exprees will serve up production assets
+  // Express will serve up production assets
   const path = require('path');
-    app.get(express.static(__dirname, 'webclient/src/room/room.js'));
+    app.use(path.join(__dirname, 'webclient/src/room/room.js'));
+    app.use(express.static(__dirname, 'webclient/src/room/room.js'));
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '/index.html'));
   });
