@@ -44,7 +44,7 @@ const videoConstraints = {
 
 
 
-export default function Room(props) {()=>
+ function Room(props) {()=>
   { const socketRef = useRef();
   const userVideo = useRef();
   const peersRef = useRef([]);
@@ -151,5 +151,5 @@ export default function Room(props) {()=>
     </Container>
   );
 };
-
+export default Room;
 }
