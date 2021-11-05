@@ -63,7 +63,7 @@ module.exports = app;
 if (process.env.NODE_ENV === 'production') {
   // Exprees will serve up production assets
   const path = require('path');
-    app.use(express.static(__dirname, 'webclient/src/room/room.js'));
+    app.get(express.static(__dirname, 'webclient/src/room/room.js'));
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '/index.html'));
   });
