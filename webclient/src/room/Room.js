@@ -151,5 +151,6 @@ const videoConstraints = {
     </Container>
   );
 };
+module.exports = { Room: Room.js };
 export default Room;
 }
