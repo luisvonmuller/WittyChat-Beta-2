@@ -58,13 +58,13 @@ io.on('connection', socket =>
 
 server.listen(process.env.PORT || 8080, () => console.log('server is running on port 3000'));
 
-module.exports = server;
+module.exports = app;
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
   const path = require('path');
-    app.use(path.join(__dirname, 'webclient/src/room/room.js'));
-        server.use(express.static((__dirname, 'webclient/src/room/room.js')));
+    app.use(path.join(req, res)(__dirname, 'webclient/src/room/room.js'));
+        app.use(express.static((__dirname, 'webclient/src/room/room.js')));
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '/index.html'));
   });
