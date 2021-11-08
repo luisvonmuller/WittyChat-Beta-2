@@ -13,3 +13,5 @@ document.getElementById('root')
 
 
 serviceWorker.unregister();
+
+module.exports = router;
