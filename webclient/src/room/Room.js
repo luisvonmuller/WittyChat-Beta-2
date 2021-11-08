@@ -1,4 +1,5 @@
-import React from "react";
+import * as React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 import Peer from "simple-peer";
