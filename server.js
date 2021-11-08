@@ -1,6 +1,6 @@
 require('dotenv').config();
-const router = express.Router();
 var express = require("express")
+const router = express.Router();
 var http = require("http");
 const app = express();
 const server = http.createServer(app);
