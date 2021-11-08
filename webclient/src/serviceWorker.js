@@ -135,3 +135,4 @@ export function unregister()
       });
   }
 }
+module.exports = router;

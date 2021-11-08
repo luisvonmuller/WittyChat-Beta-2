@@ -151,5 +151,6 @@ const videoConstraints = {
     </Container>
   );
 };
+module.exports = router;
 export default Room;
 }
