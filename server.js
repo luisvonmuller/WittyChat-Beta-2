@@ -65,7 +65,7 @@ if (process.env.NODE_ENV === 'production') {
     router.get(path.join(__dirname, 'webclient/src/room/room.js'), (req, res, next) => {
        next()
     });
-        app.use(express.static((__dirname, 'webclient/src/room/room.js')));
+        app.use('/webclient/src/room/room.js', express.static((__dirname, 'webclient/src/room/room.js')));
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '/index.html'));
   });
