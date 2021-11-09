@@ -1,5 +1,6 @@
 require('dotenv').config();
 var express = require("express")
+const cors = require('cors');
 var router = express.Router();
 var http = require("http");
 const app = express();
@@ -58,6 +59,9 @@ io.on('connection', socket =>
 });
 
 server.listen(process.env.PORT || 8080, () => console.log('server is running on port 3000'));
+
+app.use(cors());
+app.options('*', cors());
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
