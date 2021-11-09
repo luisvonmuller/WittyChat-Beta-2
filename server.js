@@ -67,7 +67,7 @@ if (process.env.NODE_ENV === 'production') {
     });
         app.use('/webclient/src/room/room.js', express.static((__dirname, 'webclient/src/room/room.js')));
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '/index.html'));
+    res.sendFile(path.resolve(__dirname, 'webclient/public/index.html'));
   });
 }
 
