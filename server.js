@@ -59,8 +59,6 @@ io.on('connection', socket =>
 
 server.listen(process.env.PORT || 8080, () => console.log('server is running on port 3000'));
 
-module.exports = router;
-
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
   const path = require('path');
@@ -71,3 +69,4 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
+module.exports = router;
