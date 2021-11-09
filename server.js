@@ -1,6 +1,6 @@
 require('dotenv').config();
 var express = require("express")
-const router = express.Router();
+var router = express.Router();
 var http = require("http");
 const app = express();
 const server = http.createServer(app);
@@ -62,7 +62,7 @@ server.listen(process.env.PORT || 8080, () => console.log('server is running on 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
   const path = require('path');
-    app.use((path.join(__dirname, 'webclient/src/room/room.js')));
+    router.get('/', path.join(__dirname, 'webclient/src/room/room.js'));
         app.use(express.static((__dirname, 'webclient/src/room/room.js')));
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '/index.html'));
