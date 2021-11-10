@@ -5,12 +5,7 @@ var http = require("http");
 const app = express();
 const server = http.createServer(app);
 var socket = require("socket.io");
-const io = socket(server, {
-    cors: {
-        origin: "https://witty-chat.herokuapp.com/",
-        methods: ["GET", "POST", "OPTIONS", "PUT", "PATCH", "DELETE"]
-    }
-});
+const io = socket(server);
 
 const users = {};
 
@@ -76,5 +71,13 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'webclient/public/index.html'));
   });
 }
+
+app.use(cors({
+    'allowedHeaders': ['sessionId', 'Content-Type'],
+    'exposedHeaders': ['sessionId'],
+    'origin': '*',
+    'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    'preflightContinue': false
+  }));
 
 module.exports = router;
