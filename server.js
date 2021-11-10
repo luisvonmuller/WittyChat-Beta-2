@@ -3,6 +3,7 @@ var express = require("express")
 var router = express.Router();
 var http = require("http");
 const app = express();
+var cors = require('cors')
 const server = http.createServer(app);
 var socket = require("socket.io");
 const io = socket(server);
