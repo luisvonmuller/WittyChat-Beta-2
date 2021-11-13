@@ -58,6 +58,8 @@ io.on('connection', socket =>
 
 });
 
+server.listen(process.env.PORT || 3000, () => console.log('server is running on port 3000'));
+
 var corsOptions = {
     origin: 'https://witty-chat.herokuapp.com/',
     optionsSuccessStatus: 200 
@@ -73,7 +75,6 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'webclient/public/index.html'));
 
-    server.listen(process.env.PORT || 3000, () => console.log('server is running on port 3000'));
   });
 }
 
